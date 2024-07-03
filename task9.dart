@@ -8,6 +8,13 @@
 // Number is : 4 and cube of the 4 is :64
 // Number is : 5 and cube of the 5 is :125
 
-void main(){
-  
+import "dart:io";
+import "dart:math";
+
+void main() {
+  print("Enter any number to find cubes till that number");
+  int userInput = int.parse(stdin.readLineSync()!);
+  for (int i = 1; i <= userInput; i++) {
+    print("Number is : $i and cube of the $i is :${pow(i, 3)}");
+  }
 }
